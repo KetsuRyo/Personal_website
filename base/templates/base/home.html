@@ -1,0 +1,263 @@
+{% load static %}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <title>Jack (Chun-Chieh) Liao's Portfolio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript">
+	function resetForm() {
+		document.getElementById('contact-form').reset();
+	}
+	</script>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body h-100 border-info" id="profile-wrapper">
+                    <img id="profile-pic" src="{% static 'images/JackProfilePhoto.jpg' %}" >
+                    <hr>
+                    <h4>Jack (Chun-Chieh) Liao</h4>
+                    <p>Software Development Engineer</p>
+                    <p>New York, NY | +1 (347) 400-5613 | <a href="mailto:cliao9@stevens.edu">cliao9@stevens.edu</a></p>
+
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card card-body h-100 border-info">
+                    <h4>Professional Experience</h4>
+                    <hr>
+                    <!-- Pegatron Experience -->
+                    <p>
+                        Software Development Engineer, PEGATRON Corporation, Taipei, Taiwan <br>
+                        Mobile Application, AIOps, Web Full-Stack, Enterprise Software Development - 07/2021-07/2023
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#pegatron-experience"
+                                aria-expanded="false" aria-controls="pegatron-experience">
+                            Detail
+                        </button>
+                    </p>
+                    <div class="collapse" id="pegatron-experience">
+                        <ul>
+							<li>Optimized TensorFlow Mobile inferences on Android and iOS systems, achieving a 30% increase in speed.
+							</li>
+							<li>Constructed a REST-API for anomaly detection of server error logs by transformer, reducing error
+								reporting time by 20%.
+							</li>
+							<li>Developed a Mobile Application for Android device, cutting down manual entry inventory time by 50%.
+							</li>
+							<li>Engineered an Optical character recognition (OCR) Application with .NET core and pyTorch, reducing 
+								invoice filing time by 80%, significantly easing the workload for the Procurement and Accounting Departments.
+							</li>
+							<li>Designed a Web Application using Natural Language Processing models (LLAMA、Bert), enhancing accuracy of 
+								commercial mail classification accuracy by 25%.
+							</li>
+							<li>Engineered user interfaces for AI facial recognition and online invoice recognition application with Angular, 
+								enhancing user accessibility and streamlining verification processes.
+							</li>
+							<li>Led a Machine Learning team of Engineers and mentored juniors during project development.
+							</li>
+							<!-- ...Additional experiences from PEGATRON Corporation... -->
+                        </ul>
+                    </div>
+                    <!-- IIS Experience -->
+                    <p>
+                        Software Engineer, Institute of Information Science (IIS), Taipei, Taiwan <br>
+                        Database, Machine Learning, Web Full-Stack, Big Data Analysis, Bioinformatics - 09/2019-06/2021
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#iis-experience"
+                                aria-expanded="false" aria-controls="iis-experience">
+                            Detail
+                        </button>
+                    </p>
+                    <div class="collapse" id="iis-experience">
+                        <ul>
+							<li>Trained CNN-based and RNN-based models for microbiome analysis and microbial genome recombination,
+								enhancing the accuracy by over 30% without sacrificing speed compared to Kraken2-based system.
+							</li>
+							<li>Designed an AI application for cancer detection. The app showcased significant microbial community 
+								differences between cancer patients and healthy individuals.
+							</li>
+							<li>Constructed Databases of Whole Genome Sequencing Microbial Genome a 16S rRNA, increasing the resolution 
+								by 20% compared to the original database. 
+								Results are Published in Academic Journals. (Doi: 10.1093/bioinformatics/btac184)
+							</li>
+							<li>Developed a web application for microbiome automatic analysis, boosting analysis efficiency by 15%.
+							</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100 border-info">
+                    <h4>Education</h4>
+                    <hr>
+                    <p>Stevens Institute of Technology, Hoboken, NJ <br>
+                        Master of Science in Computer Science (with scholarship) - Jan 2025 (expected)</p>
+                    <p>National Taiwan University, Taipei, Taiwan <br>
+                        Master of Science in Molecular Medicine - Jun 2018 <br>
+                        Bachelor of Science in Biology - Jun 2016</p>
+                </div>
+            </div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100 border-info">
+					<h4>Skills</h4>
+					<hr>
+					<div class="row">
+						<div class="col-md-4">
+							<h5 data-toggle="collapse" data-target="#programming-languages" aria-expanded="false" aria-controls="programming-languages" style="cursor: pointer;">
+								Programming Languages
+							</h5>
+							<div id="programming-languages" class="collapse">
+								<ul>
+									<li>Python</li>
+									<li>Kotlin & Java (Android)</li>
+									<li>Swift (Xcode)</li>
+									<li>JavaScript & TypeScript</li>
+									<li>C# (.NET)</li>
+									<li>Node JS</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h5 data-toggle="collapse" data-target="#frameworks-libraries" aria-expanded="false" aria-controls="frameworks-libraries" style="cursor: pointer;">
+								Frameworks & Libraries
+							</h5>
+							<div id="frameworks-libraries" class="collapse">
+								<ul>
+									<li>Django, Flask</li>
+									<li>PyTorch, Tensorflow</li>
+									<li>Angular, React</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h5 data-toggle="collapse" data-target="#databases-cloud" aria-expanded="false" aria-controls="databases-cloud" style="cursor: pointer;">
+								Databases & Cloud
+							</h5>
+							<div id="databases-cloud" class="collapse">
+								<ul>
+									<li>MySQL, RoomDatabase, SQLite</li>
+									<li>AWS, Azure</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-md-4">
+							<h5 data-toggle="collapse" data-target="#development-methodologies" aria-expanded="false" aria-controls="development-methodologies" style="cursor: pointer;">
+								Development Methodologies
+							</h5>
+							<div id="development-methodologies" class="collapse">
+								<ul>
+									<li>Agile Software Development</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h5 data-toggle="collapse" data-target="#machine-learning-ai" aria-expanded="false" aria-controls="machine-learning-ai" style="cursor: pointer;">
+								Machine Learning & AI
+							</h5>
+							<div id="machine-learning-ai" class="collapse">
+								<ul>
+									<li>Machine Learning, Deep Learning</li>
+									<li>Computer Vision</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h5 data-toggle="collapse" data-target="#devops-version-control" aria-expanded="false" aria-controls="devops-version-control" style="cursor: pointer;">
+								DevOps & Version Control
+							</h5>
+							<div id="devops-version-control" class="collapse">
+								<ul>
+									<li>Docker, Kubernetes</li>
+									<li>Git</li>
+									<li>Linux experience</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100 border-info">
+                    <h4>Related Projects</h4>
+                    <hr>
+                    <p>
+                        Website Designing for Family Wholesale Store - 05/2020-06/2022
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#family-wholesale-store-project"
+                                aria-expanded="false" aria-controls="family-wholesale-store-project">
+                            Detail
+                        </button>
+                    </p>
+                    <div class="collapse" id="family-wholesale-store-project">
+                        <ul>
+							<li>Developed a React-based web frontend interface, user-friendly functions contributed to a 20% boost in
+								our family business's revenue.
+							</li>
+							<li>Designed a Django-based backend application for comprehensive procurement and shipping, 60% trivial tasks were reduced.
+							</li>
+							<li>Implemented a simplified mobile interface to track orders and inventory, resulting in a 43% reduction in time spent on business management tasks.
+							</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-body h-100 border-info">
+                    <h4>Academic Publications</h4>
+                    <hr>
+                    <p>MetaSquare: an integrated meta-database of 16S rRNA gene amplicon for microbiome taxonomic classification <br>
+                        Chun-Chieh Liao, et al. Bioinformatics 38:10 (May 2022), 2930–2931</p>
+                    <p><a href="https://scholar.google.com/citations?user=47Ithi8AAAAJ&hl" target="_blank">4 other publications on
+                        Google Scholar Profile</a></p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </div>
+	<div class="container">
+	
+		<section id="contact-section">
+			<h4>Contact Me</h4>
+			<form method="post" action="/contact/">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<button type="submit">Send</button>
+			</form>
+		</section>
+	</div>
+	<footer class="d-flex justify-content-center fixed-bottom">
+        <ul class="social-links list-unstyled mb-0">
+            <li><a href="https://www.facebook.com/liao.chunchieh"><img class="social-links" src="{% static 'images/facebook.png' %}"></a></li>
+            <li><a href="https://www.linkedin.com/in/jack-liao-ba4685231/"><img class="social-links" src="{% static 'images/linkedin.png' %}"></a></li>
+        </ul>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		</body>
+		</html>
+			
