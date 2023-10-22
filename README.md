@@ -24,8 +24,10 @@ Create a virtual environment and activate it:
 Copy code
 python -m venv env
 source env/bin/activate  # On Windows, use `env\Scripts\activate`
-```bash
+```
+
 Install the required dependencies:
+
 ```
 
 pip install -r requirements.txt
@@ -37,6 +39,7 @@ Run the development server:
 python manage.py runserver
 Now, you can access the website at http://127.0.0.1:8000/.
 ```
+
 
 ### Usage
 Contact Form
