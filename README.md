@@ -20,8 +20,6 @@ git clone https://github.com/your-username/portfolio-website.git
 cd portfolio-website
 
 Create a virtual environment and activate it:
-
-Copy code
 python -m venv env
 source env/bin/activate  # On Windows, use `env\Scripts\activate`
 ```
@@ -31,12 +29,13 @@ Install the required dependencies:
 ```
 
 pip install -r requirements.txt
+
 Apply the migrations to create the database schema:
-
 python manage.py migrate
-Run the development server:
 
+Run the development server:
 python manage.py runserver
+
 Now, you can access the website at http://127.0.0.1:8000/.
 ```
 
