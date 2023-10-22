@@ -15,39 +15,39 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository to your local machine:
 
-```bash
+```
 git clone https://github.com/your-username/portfolio-website.git
 cd portfolio-website
 
 Create a virtual environment and activate it:
-```bash
+
 Copy code
 python -m venv env
 source env/bin/activate  # On Windows, use `env\Scripts\activate`
-```
-Install the required dependencies:
 ```bash
-Copy code
+Install the required dependencies:
+```
+
 pip install -r requirements.txt
 Apply the migrations to create the database schema:
-bash
-Copy code
+
 python manage.py migrate
 Run the development server:
-bash
-Copy code
+
 python manage.py runserver
 Now, you can access the website at http://127.0.0.1:8000/.
+```
 
-Usage
+### Usage
 Contact Form
 Visitors can use the contact form to send messages. Messages will be sent to b01b01059@gmail.com.
 
-Deployment
+### Deployment
 Please refer to the Django deployment documentation for instructions on deploying this project in a production environment.
 
-Contact
+### Contact
 Email: b01b01059@gmail.com
 LinkedIn: https://www.linkedin.com/in/jack-liao-ba4685231/
+
 License
 This project is open source and available under the MIT License.
